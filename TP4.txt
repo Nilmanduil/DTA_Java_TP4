@@ -1,0 +1,24 @@
+TP 4 : POO - 1 heure
+
+Exercice 3 – Vecteurs paramétrés
+1. Modifiez le vecteur de l’exercice précédent en un vecteur générique
+Vector<T> où T représente le type des objets que l’utilisateur peut placer
+dans le vecteur.
+2. Faites en sorte que la classe Vector<T> implémente l’interface Iterable<T>.
+L’itérateur retourné par la méthode iterator() est une instance de la classe
+VectorIterator externe à la classe Vector.
+3. Modifiez la classe VectorIterator enfin d’en faire une classe interne et
+privée à la classe Vector.
+4. Ajoutez une méthode void addAll(Vector<T> elements) à la classe
+Vector ?
+5. Ajoutez une méthode boolean isSorted() qui retourne true si les éléments
+présents dans le vecteur sont triés. Cette méthode suppose que les
+objets présents dans le vecteur implémentent l’interface Comparable. La
+méthode compareTo de cette interface est utilisée pour comparer les éléments
+deux à deux. Que se passe-t-il si des éléments n’implémentent pas
+l’interface Comparable ?
+6. Ajoutez une méthode boolean isSorted(Comparator<T> comparator)
+qui fournit la même fonctionnalité que la méthode précédente en prenant,
+ici, un comparateur en paramètre.
+7. Ajoutez une méthode statique boolean isSorted(Vector<E> vector)
+qui retourne true si les éléments du vecteur vector sont triés
